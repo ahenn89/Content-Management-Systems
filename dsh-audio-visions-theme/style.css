@@ -1,0 +1,151 @@
+/*
+Theme Name: DSH Audio Visions LLC
+Theme URI: http://wdgwp.com/
+Description: A Different Kind of Sound Company 
+Author: Ashlee Hosbach
+Author URI: http://graph-art.matc.edu/hosbacha/vicom124/wordpress.com/
+Version: 1.0
+
+Tags:
+
+License:
+License URI:
+
+General comments (optional).
+*/
+html{ 
+	background: url(../dsh-audio-visions-theme/images/background.png) no-repeat center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: black;
+	width: auto;
+  	margin: 5%;;
+}
+
+
+header {
+	background: url(images/logo1.png) no-repeat;
+	width: 120%;
+	height: 400px;
+	margin-left: 8%;
+	
+		
+}
+
+#navigation {
+	float: left;
+	margin-left: 4%;
+	/*margin-top: 0.5%;*/	
+	width: 100%;
+
+	
+}
+/* ===== Top ===== */
+#navigation ul {
+	list-style:none;
+	margin:0;
+	padding:1px 0;
+}
+#navigation ul li{
+	float:left;
+}
+/* ===== First Level ===== */				
+#navigation ul li {
+	position:relative;
+	padding:0;
+	margin:0;
+	border-right:1px solid #999;
+	background: #aaa;
+	
+}
+#navigation ul ul li {
+	border:none;
+	background: #777;
+}
+#navigation ul li a {
+	display:block;
+	text-decoration:none;
+	font-size:18px;
+	color:#fff;
+	padding:0 30px;
+	line-height:43px;
+}
+#navigation ul li:hover a {
+	position:relative;
+	background:#777;
+	color:#fff;
+}
+#navigation ul ul,	#navigation ul li:hover ul ul {
+	position:absolute;
+	display:none;
+}
+#navigation ul ul li:hover ul,	#navigation ul li:hover ul li:hover ul {
+	display:block;
+	top:0px;
+	left: 100%;
+}
+/* ===== Second and Third Level ===== */
+#navigation ul li:hover ul {
+	display:block;
+	position:absolute;
+	left:0;
+	top:100%;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+}
+#navigation ul ul {
+	background:#777;
+}
+#navigation ul ul ul {
+	background:#e4e4e4 !important;
+	border-color:#e4e4e4 !important;
+	margin-left:-14px;
+}
+#navigation ul ul li a {
+	float:none;
+	width:180px;
+	line-height:normal;
+	font-variant:normal;
+	font-weight:normal;
+	font-size:14px;
+	color:#fff;
+	text-transform:none;
+	padding:6px 10px;
+	background:none !important;
+}
+#navigation ul ul ul li a {
+	color:#fff;
+	font-weight:bold;
+}
+#navigation ul ul li:hover>a {
+	background:#fff !important;
+	color:#999 !important;
+}
+#navigation ul ul ul li:hover>a {
+	background:#eee !important;
+	color: #777 !important;
+}
+/*===Start of Body===*/
+#background {
+	background:rgba(255,255,255, 0.8);
+	margin: 4%;	
+	margin-top: 5%;
+	padding: 2%;
+}
+article {
+
+	/*width: 90%;	
+	text-align: left;*/
+	
+}
+
+
+
+footer {
+	clear: both;
+}

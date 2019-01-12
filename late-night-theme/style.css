@@ -1,0 +1,75 @@
+/*
+Theme Name: Phantom of the Opera
+Theme URI: http://wdgwp.com/
+Description: Music of the Night 
+Author: Ashlee Hosbach
+Author URI: http://graph-art.matc.edu/hosbacha/vicom124/wordpress.com/
+Version: 1.0
+
+Tags:
+
+License:
+License URI:
+
+General comments (optional).
+*/
+html{ 
+	 background: url(images/the_phantom_of_the_opera_by_impala99-d66iuy3.png) no-repeat center fixed; 
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+	 color: white;
+	 
+	
+}
+body {
+ 
+  width: 95%;
+  margin: auto;
+
+} 
+header {
+	background: url(images/phantombanner2.png) no-repeat center;
+	height: 200px;
+    margin: 0 auto;
+    padding: 10;
+    position: relative;
+    width: 1000px;
+}
+ul {
+	list-style: none;
+	padding: 1em 0;
+	background-color: #000000;
+}
+li {
+	display: inline;
+}
+a {
+	padding: 1em 2em;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-right: 2px solid #B2B2B2;
+}
+a.current {
+	color: yellow;
+}
+section {
+	float: left;
+	
+}
+
+#sidebar {
+	height: 500px;
+	width: 40%;
+	border-left: 2px solid #FFFFFF;
+	border-bottom: 2px dotted white;
+	float: right;
+	padding-top: 50px;
+	
+	
+}
+footer {
+	clear: both;
+}
