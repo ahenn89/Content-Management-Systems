@@ -1,0 +1,142 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9> <![endif]-->
+<!--[if !IE]><!--> <html lang="en-US">  	<!--<![endif]-->
+<head>
+<title>Geneva Deck Co</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" name="viewport">
+ <!--Start Css-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<!-- Start JQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<!-- Cycle2 -->
+<script src="js/jquery.cycle2.min.js"></script>
+</head>
+<body id="interiorpage" class="clearFix">
+	<header id="top" class="clearFix relative margin">
+		<div class="logo">
+			<a href="index.html"><img class="col-md-3 col-sm-4 col-xs-6" src="images/GenevaDecks-logo.png" alt="Geneva Deck"/></a>
+		</div>
+		<div id="social" class="col-md-9 col-sm-8 col-xs-6">
+			<img src="images/social_media.png"/>
+		</div>
+		<nav id="topNav" class="col-lg-9 col-sm-12">
+			<ul class="top_nav relative">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="customdecks.html">Custom Decks</a>
+				<ul>
+					<li><a href="de.html">Deck Elements</a></li>
+					<li><a href="pf.html">Performance Features</a></li>
+				</ul>
+			  </li>
+			  <li><a href="gallery.html">Gallery</a>
+				<ul>
+					<li><a href="cdd.html">Custom Deck Designs</a></li>
+					<li><a href="pk.html">Premium Kitchens</a></li>
+					<li><a href="ol.html">Outdoor Lifestyle</a></li>
+				</ul>
+			  </li>
+			  <li><a href="contact.html">Contact</a></li>
+			</ul>	
+		</nav>
+	</header>
+	<section id="featured_image">
+		<img src="images/slide2.jpg"/>
+	</section>
+	<section id="customDecks_section1" class="margin">
+		<img id="slide" src="images/slideshow1.jpg"/>
+		<div id="slides">
+			<img src="images/slideshow1.jpg"alt="Tree"/>
+			<img src="images/slideshow2.jpg"alt="Fall"/>
+			<img src="images/slideshow3.jpg"alt="Leaf"/>
+			<img src="images/slideshow4.jpg"alt="Water"/>
+			<img src="images/slideshow5.jpg"alt="House"/>
+			<img src="images/slideshow6.jpg"alt="Beach"/>
+		</div>
+		<div>
+			<h1>GET DECKED OUT</h1>
+			<p>The Geneva Deck Company custom designs decks and lifestyle environments. Whether you live in an estate from a by-gone era or are in the process of building a new home, we respect you and the uniqueness of your property.</p>
+			<p>Designed to your specifications and wildest dreams, Geneva Deck will meet  your needs and exceed your expectations.  Premium PVC, Exotic Hardwoods and Composite decking materials offer many design options and solutions to uniquely transform your outdoor environment for both function and beauty.</p>
+			<ul id="decks">
+				<li>Decking</li>
+				<li>Railing</li>
+				<li>Lighting</li>
+				<li>Framing</li>
+				<li>Stairs</li>
+				<li>Finishing Touches</li>
+			</ul>
+		</div>
+	</section>
+	<section id="customDecks_section3" class="margin relative">
+		<img src="images/slideshow1.jpg"/>
+		<div>
+			<h1>VISUALIZE</h1>
+			<p>Cotton candy pie wafer sugar plum tiramisu. Soufflé candy bear claw dragée. Sweet roll sugar plum cake pudding cake gummi bears tootsie roll fruitcake. Chocolate bar gummi bears fruitcake.</p>
+			<p>Carrot cake muffin danish muffin gummies wafer sugar plum. Chocolate cake tart oat cake ice cream ice cream sesame snaps candy canes marshmallow. Chupa chups pastry gingerbread dessert dragée icing halvah. Donut pie chocolate cake marzipan sweet.</p>
+		</div>
+	</section>
+	<div class="margin border"></div>
+	<footer class="margin clearFix">
+			<nav class="bottom_nav">
+				<ul>
+					<li class="col-sm-3">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="col-sm-3">
+						<a href="customdecks.html">Custom Decks</a>
+							<ul>
+								<li><a href="#">Deck Elements</a></li>
+								<li><a href="#">Performance Features</a></li>
+							</ul>
+					</li>
+					<li class="col-sm-3">
+						<a href="gallery.html">Gallery</a>
+							<ul>
+								<li><a href="cdd.html">Custom Deck Designs</a></li>
+								<li><a href="pk.html">Premium Kitchens</a></li>
+								<li><a href="ol.html">Outdoor Lifestyle</a></li>
+							</ul>
+					</li>
+					<li class="col-sm-3">
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</nav>
+	</footer>
+</body>
+<script>
+	$(document).ready(function() {
+		var image, imageCache = [];
+		$("#slides img").each(function() {
+			image = new Image();
+			image.src = $(this).attr("src");
+			image.title = $(this).attr("alt");
+			imageCache.push( image );
+		});
+		//Start Slideshow
+		var imageCounter = 0;
+		var nextImage;
+		var time = setInterval(
+			function() {
+				$("#caption").fadeOut(5000);
+				$("#slide").fadeOut(5000,
+					function() {
+						imageCounter = (imageCounter +1) % imageCache.length;
+						nextImage = imageCache[imageCounter];
+						$("#slide").attr("src", nextImage.src).fadeIn(2000);
+						$("#caption").text(nextImage.title).fadeIn(2000);
+					}
+				);
+			},
+			5000);
+	})
+</script>
+</html>
+</!doctype>
